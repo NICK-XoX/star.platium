@@ -9,3 +9,5 @@ rm *.so
 rm script.py
 python setup.py build_ext --inplace
 cp src/script.py ./
+pyarmor gen --pack FC -r script.py
+
