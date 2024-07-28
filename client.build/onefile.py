@@ -44,7 +44,7 @@ def run(cmd: str, args: list = None, cwd: str = None, wait: bool = True) -> str:
         return None
 #===============================================================================
 def get_pip():
-    with open('./src/requirements.txt', 'r') as rr:
+    with open('./src/requirements.txt', 'r', encoding='utf-8') as rr:
         lines = [line.strip() for line in rr.readlines()]
         # data = rr.read()
     installs = []
