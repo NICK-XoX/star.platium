@@ -1,4 +1,6 @@
 
+
+source src/venv/bin/activate
 rm -rf build
 rm *cpython*
 rm src/*.c
