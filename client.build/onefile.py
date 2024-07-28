@@ -43,14 +43,25 @@ def run(cmd: str, args: list = None, cwd: str = None, wait: bool = True) -> str:
     else:
         return None
 #===============================================================================
+def get_pip():
+    with open('./src/requirements.txt', 'r') as rr:
+        data = rr.read()
+    installs = []
+    for row in data.split('\n'):
+        new = row.strip()
+        if new == '': continue
+        package = new.split('=')[0]
+        installs.append(package)
+    return ','.join(installs)
+#===============================================================================
 def main(script_name):
     'nick clean out .jpath and all configs'
     py2exe = ' '.join([
         f'pyinstaller {script_name}',
         '--noconfirm',
         '--onefile',
-        # '--hidden-import=requests'
-        '--paths=/usr/local/lib/python3.10/dist-packages'
+        '--hidden-import=requests'
+        f'--hidden-imports={get_pip()}'
         # '--add-data "react/build/*;react/build"',
         # '--add-data "binary/*;binary"'
     ])
