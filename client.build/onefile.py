@@ -44,10 +44,14 @@ def run(cmd: str, args: list = None, cwd: str = None, wait: bool = True) -> str:
         return None
 #===============================================================================
 def get_pip():
-    with open('./src/requirements.txt', 'r', encoding='latin1') as rr:
-        data = rr.read()
+    with open('./src/requirements.txt', 'r') as rr:
+        lines = [line.strip() for line in rr.readlines()]
+        # data = rr.read()
     installs = []
-    for row in data.split('\n'):
+    
+    # for row in data.split('\n'):
+    for row in lines:
+        print('in row', row)
         new = row.strip()
         if new == '': continue
         package = new.split('=')[0]
