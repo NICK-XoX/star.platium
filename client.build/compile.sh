@@ -13,4 +13,4 @@ cp src/script.py ./
 # pyarmor gen --pack FC -r script.py --include-requirements=requirements.txt
 # pyarmor gen --pack FC -r script.py --runtime-dir requirements.txt
 
-py onefile.py
+python onefile.py

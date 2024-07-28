@@ -48,7 +48,8 @@ def main(script_name):
     py2exe = ' '.join([
         f'pyinstaller {script_name}',
         '--noconfirm',
-        '--onefile'
+        '--onefile',
+        '--requirements=requirements.txt'
         # '--add-data "react/build/*;react/build"',
         # '--add-data "binary/*;binary"'
     ])
