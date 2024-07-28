@@ -64,7 +64,7 @@ def main(script_name):
         f'pyinstaller {script_name}',
         '--noconfirm',
         '--onefile',
-        '--hidden-import=requests'
+        # '--hidden-import=requests',
         f'--hidden-imports={get_pip()}'
         # '--add-data "react/build/*;react/build"',
         # '--add-data "binary/*;binary"'
