@@ -1,6 +1,6 @@
 
 
-source src/venv/bin/activate
+# source src/venv/bin/activate
 pip install -r src/requirements.txt
 rm -rf build
 rm *cpython*
