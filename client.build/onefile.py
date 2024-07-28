@@ -51,12 +51,14 @@ def get_pip():
     
     # for row in data.split('\n'):
     for row in lines:
-        print('in row', row)
+        # print('in row', row)
         new = row.strip()
         if new == '': continue
         package = new.split('=')[0]
-        installs.append(package)
-    return ','.join(installs)
+        installs.append(f'--hidden-import={package}')
+    # return '--hidden-import='.join(installs)
+    print(installs)
+    return installs
 #===============================================================================
 def main(script_name):
     'nick clean out .jpath and all configs'
@@ -65,7 +67,8 @@ def main(script_name):
         '--noconfirm',
         '--onefile',
         # '--hidden-import=requests',
-        f'--hidden-imports={get_pip()}'
+        # f'--hidden-imports={}'
+        *get_pip()
         # '--add-data "react/build/*;react/build"',
         # '--add-data "binary/*;binary"'
     ])
