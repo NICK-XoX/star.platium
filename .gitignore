@@ -7,3 +7,4 @@ keys.py
 
 *.so 
 *.c
+build 
