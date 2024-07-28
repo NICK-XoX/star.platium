@@ -49,7 +49,8 @@ def main(script_name):
         f'pyinstaller {script_name}',
         '--noconfirm',
         '--onefile',
-        '--hidden-import=requests'
+        # '--hidden-import=requests'
+        '--paths=/usr/local/lib/python3.10/dist-packages'
         # '--add-data "react/build/*;react/build"',
         # '--add-data "binary/*;binary"'
     ])
