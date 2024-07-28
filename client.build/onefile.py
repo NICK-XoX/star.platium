@@ -49,7 +49,7 @@ def main(script_name):
         f'pyinstaller {script_name}',
         '--noconfirm',
         '--onefile',
-        '--requirements=requirements.txt'
+        '--hidden-import=requests'
         # '--add-data "react/build/*;react/build"',
         # '--add-data "binary/*;binary"'
     ])
