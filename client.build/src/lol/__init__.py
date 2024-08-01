@@ -10,7 +10,7 @@ from time import time, sleep
 #===============================================================================
 from lol.defcon import no_ as self
 #===============================================================================
-from conf import keys
+from lol.defcon import keys
 keys._init(keys)
 #===============================================================================
 from lol.defcon import decompile as fuk
