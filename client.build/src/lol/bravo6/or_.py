@@ -4,7 +4,7 @@
 import asyncio
 import websockets
 from time import sleep
-from init import *
+from lol import *
 #===============================================================================
 self = self.OverRide()
 #===============================================================================
