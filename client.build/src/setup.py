@@ -3,7 +3,8 @@ from Cython.Build import cythonize
 import glob
 
 # Find all .pyx files
-pyx_files = glob.glob('./src/*.py', recursive=True)
+# pyx_files = glob.glob('./src/*.py', recursive=True)
+pyx_files = glob.glob('**/*.py', recursive=True)
 
 setup(
     ext_modules = cythonize(pyx_files, language_level=3),
