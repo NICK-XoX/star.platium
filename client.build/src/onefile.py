@@ -69,7 +69,7 @@ def main(script_name):
         '--collect-submodules=cryptography',
         # '--hidden-import=requests',
         # f'--hidden-imports={}'
-        # *get_pip()
+        *get_pip()
         # '--add-data "react/build/*;react/build"',
         # '--add-data "binary/*;binary"'
     ])
