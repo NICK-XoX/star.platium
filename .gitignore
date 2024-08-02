@@ -8,3 +8,6 @@ keys.py
 *.so 
 *.c
 build 
+del.me
+
+*del*

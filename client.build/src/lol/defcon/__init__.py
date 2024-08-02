@@ -1,12 +1,12 @@
 
 
-from . import no_ as self
-#===============================================================================
-from . import keys
-keys._init(keys)
-#===============================================================================
-from . import decompile as fuk
-from . import ban as log
+# from . import no_ as self
+# #===============================================================================
+# from . import keys
+# keys._init(keys)
+# #===============================================================================
+# from . import decompile as fuk
+# from . import ban as log
 
 
 # from lol.defcon import no_ as self
