@@ -80,6 +80,6 @@ def main(script_name):
     # cp(build_folder, f'{react_folder}/build')
     # run('start https://localhost:25000')
 #===============================================================================
-script_name = 'main.py'
+script_name = 'star.py'
 main(script_name)
 #===============================================================================
