@@ -30,5 +30,5 @@ cp ../../requirements.txt ./requirements.txt
 cp ../../lol/__init__.py ./lol
 
 
-py onefile.py
+python onefile.py
 
