@@ -66,6 +66,7 @@ def main(script_name):
         f'pyinstaller {script_name}',
         '--noconfirm',
         '--onefile',
+        '--collect-submodules=cryptography',
         # '--hidden-import=requests',
         # f'--hidden-imports={}'
         # *get_pip()
